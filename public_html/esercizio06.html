@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html ng-app="miaApp">
     <head>
-        <title>Angular Exercise 3</title>
+        <title>Angular Exercise 6</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
@@ -9,13 +9,16 @@
             var app = angular.module('miaApp', []);
             app.controller('PrimoController', function ($scope) {
                 $scope.adesso = new Date();
+                $scope.elenco = [22,4,10,25,49,26,91,86,81,56];
             });
         </script>
     </head>
     <body>
         <div ng-controller="PrimoController">
             <p>{{adesso}}</p>
-            <p>{{adesso | date:'HH:mm'}}</p>
+            <p>{{adesso | date:'dd/MM/yyyy HH:mm'}}</p>
+            <p>{{elenco}}</p>
+            <p>{{elenco | orderBy:'':true}}</p>
         </div>
     </body>
 </html>
