@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="miaApp">
+    <head>
+        <title>Angular Exercise 3</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="esercizio04.js"></script>
+    </head>
+    <body>
+        <div ng-controller="PrimoController">
+            <h4>Semplice contatore</h4>
+            <button ng-click="aggiungi(1)">Aggiungi</button>
+            
+            <h1>Conteggio attuale: {{contatore}}</h1>
+        </div>
+    </body>
+</html>

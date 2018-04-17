@@ -1,13 +1,15 @@
 <!DOCTYPE html>
-<html ng-app>
+<html ng-app="miaApp">
     <head>
-        <title>Angular Exercise 1</title>
+        <title>Angular Exercise 3</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+        <script src="esercizio03.js"></script>
     </head>
     <body>
-        <input type="text" placeholder="Il tuo nome" ng-model="nome">
-        <h1>{{nome}}</h1>
+        <div ng-controller="mioController">
+            {{orologio.ora}}
+        </div>
     </body>
 </html>
